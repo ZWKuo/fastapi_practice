@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  api:
+    build: .
+    image: 33e22295687f
+    container_name: api
+    restart: always
+    ports:
+      - 8000:8000
+
+  energy-db:
+    image: postgres
+    container_name: db
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: test
+      POSTGRES_USER: zw
+      POSTGRES_PASSWORD: password
+

@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+numpy = "*"
+pandas = "*"
+matplotlib = "*"
+fastapi = "*"
+uvicorn = "*"
+sqlalchemy = "*"
+alembic = "*"
+psycopg2 = "*"
+python-dotenv = "*"
+email-validator = "*"
+passlib = {extras = ["bcrypt"], version = "*"}
+jose = "*"
+
+[dev-packages]
+ipykernel = "*"
+
+[requires]
+python_version = "3.8"
